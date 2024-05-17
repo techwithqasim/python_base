@@ -1,0 +1,255 @@
+1.
+bonus = 5/100
+year_of_service = float(input("Year Of Service: "))
+
+if year_of_service > 5:
+    user_salary = float(input("User Salary: "))
+    net_bonus = user_salary * bonus
+    print(f"Net Bonus Amount is {net_bonus}")
+    
+else:
+    print("No Bonus For You")
+
+
+
+
+2.
+age = int(input("Enter Your Age: "))
+
+if age > 17:
+    print("Person is Eligible for Voting")
+
+else:
+    print("Person is Not Eligible for Voting")
+
+
+
+
+3.
+number = int(input("Enter a Number: "))
+
+if number % 2 == 0:
+    print("Number is Even")
+
+else:
+    print("Number is Odd")
+
+
+
+
+4.
+number = int(input("Enter a Number: "))
+
+if number % 7 == 0:
+    print("Number is Divisible By 7")
+
+else:
+    print("Number is Not Divisible By 7")
+
+
+
+
+5.
+number = int(input("Enter a Number: "))
+
+if number % 5 == 0:
+    print("Hello")
+
+else:
+    print("Bye")
+
+
+
+
+6.
+number_of_units = int(input("Enter the Number of Units: "))
+
+if number_of_units <= 100:
+    print(f"Electricity bill of {number_of_units} is Rs. 0")
+
+elif number_of_units > 100 and number_of_units <= 200:
+    cost_of_units_upto_200 = number_of_units * 5
+    print(f"Electricity bill of {number_of_units} unit is Rs. {cost_of_units_upto_200}")
+
+else:
+    total_cost_of_units = number_of_units * 10
+    print(f"Electricity bill of {number_of_units} unit is Rs. {total_cost_of_units}")
+
+
+
+
+7.
+number = int(input("Enter a Number: "))
+last_digit_of_number = number % 10
+print(f"Last Digit Of A Number '{number}': {last_digit_of_number}")
+
+
+
+
+8.
+number = int(input("Enter a Number: "))
+last_digit_of_number = number % 10
+
+if last_digit_of_number % 3 == 0:
+    print("Last Digit is Divisible by 3")
+
+else:
+    print("Last Digit is Not Divisible by 3")
+
+
+
+
+9.
+length = int(input("Enter the Length: "))
+breadth = int(input("Enter the Breadth: "))
+
+if length == breadth:
+    print("It is a Square")
+
+else:
+    print("It is a Rectangle")
+
+
+
+
+10.
+num1 = int(input("Enter the First Number: "))
+num2 = int(input("Enter the Second Number: "))
+
+if num1 > num2:
+    print(f"The Greatest Among Both is {num1}")
+
+else:
+    print(f"The Greatest Among Both is {num2}")
+
+
+
+
+11.
+quantity = int(input("Enter Quantity: "))
+cost_of_quantity = 100
+purchase_amount = quantity * cost_of_quantity
+
+if purchase_amount > 1000:
+    discount = purchase_amount * 10/100
+    total = purchase_amount - discount
+    print(total)
+
+else:
+    total = purchase_amount
+    print(total)
+
+
+
+
+12.
+marks = int(input("Enter Your Marks: "))
+
+if marks < 25:
+    print("Your Grade is F")
+
+elif marks >= 25 and marks < 45:
+    print("Your Grade is E")
+
+elif marks >= 45 and marks < 50:
+    print("Your Grade is D")
+
+elif marks >= 50 and marks < 60:
+    print("Your Grade is C")
+
+elif marks >= 60 and marks < 80:
+    print("Your Grade is B")
+
+else:
+    print("Your Grade is A")
+
+
+
+
+13.
+person1_age = int(input("Enter Age of Person 1: "))
+person2_age = int(input("Enter Age of Person 2: "))
+person3_age = int(input("Enter Age of Person 3: "))
+
+if person1_age > person2_age and person1_age > person3_age:
+    print(f"Person 1 with age {person1_age} is the Oldest Among All")
+
+elif person2_age > person1_age and person2_age > person3_age:
+    print(f"Person 2 with age {person2_age} is the Oldest Among All")
+
+else:
+    print(f"Person 3 with age {person3_age} is the Oldest Among All")
+
+
+if person1_age < person2_age and person1_age < person3_age:
+    print(f"Person 1 with age {person1_age} is the Youngest Among All")
+
+elif person2_age < person1_age and person2_age < person3_age:
+    print(f"Person 2 with age {person2_age} is the Youngest Among All")
+
+else:
+    print(f"Person 3 with age {person3_age} is the Youngest")
+
+
+
+
+14.
+number_of_classes_held = int(input("Enter Total Number of Classes Held: "))
+number_of_classes_attended = int(input("Enter Total Number of Classes Attended: "))
+percentage_of_class_attended = number_of_classes_attended / number_of_classes_held * 100
+
+if percentage_of_class_attended < 75:
+    print("Student is not Allowed to Sit in Exam")
+
+else:
+    print(f"Student is Allowed to Sit in Exam with {percentage_of_class_attended}% Attendance")
+
+
+
+
+15.
+number_of_classes_held = int(input("Enter Total Number of Classes Held: "))
+number_of_classes_attended = int(input("Enter Total Number of Classes Attended: "))
+medical_cause = input("Did you have a Medical Cause ( Y or N ): ")
+percentage_of_class_attended = number_of_classes_attended / number_of_classes_held * 100
+
+if medical_cause == "Y" and percentage_of_class_attended < 75:
+    print(f"Student is Allowed to Sit in Exam Due to Medical Cause with {percentage_of_class_attended}% Attendance")
+
+elif percentage_of_class_attended < 75:
+    print("Student is not Allowed to Sit in Exam")
+
+else:
+    print(f"Student is Allowed to Sit in Exam with {percentage_of_class_attended}% Attendance")
+
+
+
+
+16.
+year = int(input("Enter Year to check Leap Year: "))
+
+if (year % 400 == 0) or (year % 100 != 0) and (year % 4 == 0):
+    print(f"Year {year} is a Leap Year")
+
+else:
+    print(f"Year {year} is not a Leap Year")
+
+
+
+
+17.
+age = int(input("Enter Your Age: "))
+gender = input("Enter Your Gender ( M or F ): ")
+marital_status: input("Enter Your Marital Status ( Y or N ): ")
+
+if gender == "F":
+    print("You Will Work Only in Urban Areas")
+
+elif gender == "M" and 20 < age < 40:
+    print("You Can Work Anywhere")
+
+elif gender == "M" and 40 < age < 60:
+        print("You Will Work Only in Urban Areas")
+
+else:
+    print("Error")
