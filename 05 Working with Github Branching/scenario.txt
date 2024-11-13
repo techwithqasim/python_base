@@ -1,0 +1,15 @@
+Scenerio: 1
+- create a environment. >> conda create -n ENV_NAME python==3.12
+- install any one libaray "numpy". >> pip install numpy
+- open jupyter from that repository. >> open cmd in locate directory -> run command jupyter notebook
+- close jupyter & delete the enviornment. >> conda remove -n ENV_NAME
+
+Scenerio: 2
+- create a github repo >> in GitHub with UI
+- create .gitingore & ignore secret.sh
+- push the changes to GitHub >> git add . -> git commit -m "MESSAGE" -> git push -u origin main
+
+
+1- team work --> different branches
+2- software best practices --> production(main) --> dev()
+

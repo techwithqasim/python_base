@@ -1,1 +1,1 @@
-# Python Programming Language SMIT Batch 5 (Sir Qasim Hassan)
+This repo has all the material of the python basics studied at SMIT DE-Aplha Batch by Mentor - Sir Qasim Hassan(https://github.com/aiwithqasim).
